@@ -1,3 +1,22 @@
 {
-  "results": []
+  "results": [
+    {
+      "id": "RSL-20260001",
+      "studentId": "STU-20260001",
+      "studentName": "zaid",
+      "studentClass": "9th",
+      "examId": "EXM-20260001",
+      "examTitle": "english",
+      "answers": [
+        0,
+        1
+      ],
+      "score": 1,
+      "totalMarks": 2,
+      "percentage": 50,
+      "grade": "D",
+      "timeTaken": 11,
+      "submittedAt": "2026-06-09T18:49:44.994Z"
+    }
+  ]
 }
