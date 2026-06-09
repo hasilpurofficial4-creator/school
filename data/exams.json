@@ -1,3 +1,39 @@
 {
-  "exams": []
+  "exams": [
+    {
+      "id": "EXM-20260001",
+      "title": "english",
+      "subject": "bio",
+      "class": "9th",
+      "createdBy": "TCH-20260001",
+      "duration": 2,
+      "totalMarks": 2,
+      "status": "pending",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "4",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": "q2",
+          "text": "65",
+          "options": [
+            "8",
+            "m",
+            "0",
+            "n"
+          ],
+          "correctAnswer": 0
+        }
+      ],
+      "createdAt": "2026-06-09T18:48:44.307Z"
+    }
+  ]
 }
