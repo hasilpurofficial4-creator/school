@@ -5,8 +5,8 @@
 
 import jwt from "jsonwebtoken";
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { readFile } from "./_github";
-import type { UserRole, BannedData } from "./_types";
+import { readFile } from "./_github.js";
+import type { UserRole, BannedData } from "./_types.js";
 
 interface TokenPayload {
   id: string;

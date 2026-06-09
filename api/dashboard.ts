@@ -4,15 +4,15 @@
 // ============================================================
 
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { readFile } from "./_github";
-import { requireAuth } from "./_auth";
+import { readFile } from "./_github.js";
+import { requireAuth } from "./_auth.js";
 import type {
   StudentsData,
   TeachersData,
   ExamsData,
   ResultsData,
   BannedData,
-} from "./_types";
+} from "./_types.js";
 
 export default async function handler(
   req: VercelRequest,

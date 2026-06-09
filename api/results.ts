@@ -4,9 +4,9 @@
 // ============================================================
 
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { readFile, readAndUpdate, generateId } from "./_github";
-import { requireAuth } from "./_auth";
-import type { ResultsData, ExamsData, StudentsData, Settings, Result } from "./_types";
+import { readFile, readAndUpdate, generateId } from "./_github.js";
+import { requireAuth } from "./_auth.js";
+import type { ResultsData, ExamsData, StudentsData, Settings, Result } from "./_types.js";
 
 // Calculate grade from percentage and grade scale
 function calculateGrade(percentage: number, gradeScale: Record<string, number>): string {

@@ -4,9 +4,9 @@
 // ============================================================
 
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { readFile, readAndUpdate, generateId } from "./_github";
-import { requireAuth } from "./_auth";
-import type { BannedData, BannedUser } from "./_types";
+import { readFile, readAndUpdate, generateId } from "./_github.js";
+import { requireAuth } from "./_auth.js";
+import type { BannedData, BannedUser } from "./_types.js";
 
 export default async function handler(
   req: VercelRequest,
