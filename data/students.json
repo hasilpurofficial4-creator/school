@@ -1,3 +1,12 @@
 {
-  "students": []
+  "students": [
+    {
+      "id": "STU-20260001",
+      "name": "zaid",
+      "email": "zaid1@mail.com",
+      "class": "9th",
+      "rollNo": "2",
+      "createdAt": "2026-06-09T18:42:55.843Z"
+    }
+  ]
 }
