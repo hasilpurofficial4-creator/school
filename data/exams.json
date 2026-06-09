@@ -8,7 +8,7 @@
       "createdBy": "TCH-20260001",
       "duration": 2,
       "totalMarks": 2,
-      "status": "pending",
+      "status": "approved",
       "questions": [
         {
           "id": "q1",
@@ -33,7 +33,9 @@
           "correctAnswer": 0
         }
       ],
-      "createdAt": "2026-06-09T18:48:44.307Z"
+      "createdAt": "2026-06-09T18:48:44.307Z",
+      "approvedAt": "2026-06-09T18:49:06.723Z",
+      "approvedBy": "admin"
     }
   ]
 }
