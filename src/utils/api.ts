@@ -43,7 +43,7 @@ export async function apiFetch<T = unknown>(
     // Handle 401 - clear token and redirect
     if (res.status === 401) {
       token = null;
-      window.location.href = "/";
+      window.location.href = "/login";
       return { success: false, error: "Session expired" };
     }
 

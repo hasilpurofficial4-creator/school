@@ -1,9 +1,15 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
 export default function Navbar() {
   const { user, logout } = useAuth();
   const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    logout();
+    navigate("/");
+  };
 
   const roleLinks: Record<string, { label: string; path: string }[]> = {
     admin: [
@@ -68,7 +74,7 @@ export default function Navbar() {
                 </span>
               </div>
               <button
-                onClick={logout}
+                onClick={handleLogout}
                 className="px-3 py-1.5 text-sm text-red-600 hover:bg-red-50 rounded-md transition-colors"
               >
                 Logout

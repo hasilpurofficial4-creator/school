@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { useAuth } from "./context/AuthContext";
 import Layout from "./components/Layout";
 import ProtectedRoute from "./components/ProtectedRoute";
+import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import ManageStudents from "./pages/admin/ManageStudents";
@@ -21,8 +22,9 @@ function App() {
 
   return (
     <Routes>
+      <Route path="/" element={<HomePage />} />
       <Route
-        path="/"
+        path="/login"
         element={!isAuthenticated ? <LoginPage /> : <Navigate to="/redirect" />}
       />
       <Route path="/redirect" element={<RoleRedirect />} />

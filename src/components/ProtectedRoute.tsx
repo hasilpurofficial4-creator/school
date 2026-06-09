@@ -12,7 +12,7 @@ export default function ProtectedRoute({ role, children }: ProtectedRouteProps) 
   const { isAuthenticated, user } = useAuth();
 
   if (!isAuthenticated) {
-    return <Navigate to="/" replace />;
+    return <Navigate to="/login" replace />;
   }
 
   if (user?.role !== role) {
